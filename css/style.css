@@ -1,0 +1,195 @@
+:root{
+    --color-black: black;
+    --color-white: white;
+    --color-red: rgba(255,56,36);
+    --color-primary: #ecb390;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    box-sizing: border-box;
+}
+
+/* *********** NavBar************* */
+/* ******************************* */
+
+.navbar
+{
+    position: fixed;
+    background: var(--color-white);
+    z-index: 222;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 45px -28px rgba(0,0,0,0.75);
+}
+
+.navbar-brand h1
+{
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+
+.navbar-brand h1 span
+{
+    color: var(--color-red);
+}
+
+
+.navbar__links li
+{
+    padding: .5rem;
+}
+
+.navbar__links li a
+{
+    font-size: 1.6rem;
+    color: var(--color-darkblue);
+}
+
+/* *********** Header *********** */
+/* ****************************** */
+.header
+{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,8)), url('../images/empty-highway-overlooking-mountain-under-dark-skies-1955134.jpg');
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20rem;
+}
+
+.heading-title h1
+{
+    font-size: 5rem;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.btn-head
+{
+    height: 4.4rem;
+    padding: .7rem 5rem;
+    margin-top: 5rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    font-weight: 300;
+    color: var(--color-black);
+}
+
+.btn-head:hover
+{
+    background: var(--color-red);
+    color: var(--color-white);
+   
+}
+
+.heading-desc
+{
+    height: 30rem;
+    width: 100%;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.heading-desc img
+{
+    height: 30rem;
+    object-fit: cover;
+}
+
+/* *********** Presentation *********** */
+/* ************************************ */
+.presentation
+{
+    padding: 5rem;
+    min-height: 10rem;
+}
+
+.presentation-title h2
+{
+    font-weight: bold;
+    font-size: 4rem;
+    scroll-margin-bottom: 4rem;
+}
+
+.Velo-card
+{
+    box-shadow: 2px 3px 12px -8px rgba(0,0,0,0.75);    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.velo-card_illustration
+{
+    height: 20rem;
+    background: var(--color-primary);
+    border-radius: 6px 6px 0 0;
+}
+
+.velo-card_illustration img
+{
+    height: 20rem;
+    width: 80%;
+    object-fit: contain;
+    border-radius: 5rem;
+}
+
+.velo-card_desc h3
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.velo-card_desc p
+{
+    font-size: 1.5rem;
+}
+
+/* ************Footer************* */
+/* ******************************* */
+.footer
+{
+    background: var(--color-black);
+    padding: 10rem 0 2rem;
+}
+
+.card__footer
+{
+    min-height: 10rem;
+}
+
+.card__footer p
+{
+    font-size: 1.6rem;
+    color: var(--color-white);
+}   
+
+.footer__circle
+{
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer__circle img
+{
+    width: 60%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
