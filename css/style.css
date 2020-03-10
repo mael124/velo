@@ -156,12 +156,25 @@ body
     font-size: 1.5rem;
 }
 
+.veloRule
+{
+    margin-top: 2rem;
+    min-height: 30rem;
+    
+}
+
+.veloRule img
+{
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
 /* ************Footer************* */
 /* ******************************* */
 .footer
 {
     background: var(--color-black);
-    padding: 10rem 0 2rem;
+    padding: 10rem 0 3rem;
 }
 
 .card__footer
@@ -193,3 +206,16 @@ body
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+  }
+
+  @media screen and (max-width: 576px){
+    .veloRule 
+    {
+        display: none;
+    }
+  }
